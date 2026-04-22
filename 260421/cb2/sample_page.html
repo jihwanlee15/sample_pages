@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Streaming AC Samples (cb2)</title>
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --panel: #ffffff;
+      --line: #d9d9d2;
+      --text: #1f2328;
+      --muted: #5f6b7a;
+      --head: #eef3f7;
+      --warn: #a13014;
+      --warn-bg: #fff3ef;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 24px;
+    }
+
+    p {
+      margin: 0 0 20px;
+      color: var(--muted);
+    }
+
+    .table-wrap {
+      margin: 0 0 24px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    th,
+    td {
+      border: 1px solid var(--line);
+      padding: 10px;
+      vertical-align: middle;
+      text-align: left;
+    }
+
+    th {
+      background: var(--head);
+      font-weight: 600;
+    }
+
+    th:first-child,
+    td:first-child {
+      width: 180px;
+      font-weight: 600;
+      background: #fafaf9;
+    }
+
+    audio {
+      width: 100%;
+      max-width: 360px;
+    }
+
+    .missing {
+      display: inline-block;
+      padding: 4px 8px;
+      border: 1px solid #f2cfc6;
+      background: var(--warn-bg);
+      color: var(--warn);
+      border-radius: 4px;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 900px) {
+      body {
+        padding: 12px;
+      }
+
+      th:first-child,
+      td:first-child {
+        width: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Streaming AC Sample Page</h1>
+  <p>Directory: samples/260421/cb2 (direction headers use input-&gt;source order)</p>
+
+  <div class="table-wrap">
+    <table>
+      <tr>
+        <th>Type</th>
+        <th>us-&gt;sp</th>
+        <th>sp-&gt;us</th>
+      </tr>
+      <tr>
+        <td>Source (input)</td>
+        <td><span class="missing">Missing: pair_10020_input.wav</span></td>
+        <td><span class="missing">Missing: pair_10015_input.wav</span></td>
+      </tr>
+      <tr>
+        <td>Target</td>
+        <td><span class="missing">Missing: pair_10020_target.wav</span></td>
+        <td><span class="missing">Missing: pair_10015_target.wav</span></td>
+      </tr>
+      <tr>
+        <td>Streaming AC</td>
+        <td><span class="missing">Missing: pair_10020_sp_to_us_generated.wav</span></td>
+        <td><span class="missing">Missing: pair_10015_us_to_sp_generated.wav</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <tr>
+        <th>Type</th>
+        <th>us-&gt;uk</th>
+        <th>uk-&gt;us</th>
+      </tr>
+      <tr>
+        <td>Source (input)</td>
+        <td><span class="missing">Missing: pair_1_input.wav</span></td>
+        <td><span class="missing">Missing: pair_10009_input.wav</span></td>
+      </tr>
+      <tr>
+        <td>Target</td>
+        <td><span class="missing">Missing: pair_1_target.wav</span></td>
+        <td><span class="missing">Missing: pair_10009_target.wav</span></td>
+      </tr>
+      <tr>
+        <td>Streaming AC</td>
+        <td><span class="missing">Missing: pair_1_uk_to_us_generated.wav</span></td>
+        <td><span class="missing">Missing: pair_10009_us_to_uk_generated.wav</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <tr>
+        <th>Type</th>
+        <th>uk-&gt;sp</th>
+        <th>sp-&gt;uk</th>
+      </tr>
+      <tr>
+        <td>Source (input)</td>
+        <td><span class="missing">Missing: pair_10103_input.wav</span></td>
+        <td><span class="missing">Missing: pair_10055_input.wav</span></td>
+      </tr>
+      <tr>
+        <td>Target</td>
+        <td><span class="missing">Missing: pair_10103_target.wav</span></td>
+        <td><span class="missing">Missing: pair_10055_target.wav</span></td>
+      </tr>
+      <tr>
+        <td>Streaming AC</td>
+        <td><span class="missing">Missing: pair_10103_sp_to_uk_generated.wav</span></td>
+        <td><span class="missing">Missing: pair_10055_uk_to_sp_generated.wav</span></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
